@@ -2,7 +2,7 @@
 CSS3
 
 #### Points: 
-15/10
+10/15
 
 #### Instructor Notes: 
 Your CSS looks good, however I noticed something about your HTML that I would like you to fix.
