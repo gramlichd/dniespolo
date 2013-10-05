@@ -1,0 +1,380 @@
+/* line 55, ../sass/utl/_rest.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 63, ../sass/utl/_rest.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 74, ../sass/utl/_rest.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 81, ../sass/utl/_rest.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 94, ../sass/utl/_rest.scss */
+html {
+  font-size: 100%;
+  background: white;
+  color: black;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 110, ../sass/utl/_rest.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 116, ../sass/utl/_rest.scss */
+body {
+  margin: 0;
+}
+
+/* line 132, ../sass/utl/_rest.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 139, ../sass/utl/_rest.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 152, ../sass/utl/_rest.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 157, ../sass/utl/_rest.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 162, ../sass/utl/_rest.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 167, ../sass/utl/_rest.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 172, ../sass/utl/_rest.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 177, ../sass/utl/_rest.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/* line 185, ../sass/utl/_rest.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 192, ../sass/utl/_rest.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 197, ../sass/utl/_rest.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 204, ../sass/utl/_rest.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 210, ../sass/utl/_rest.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 218, ../sass/utl/_rest.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/* line 229, ../sass/utl/_rest.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* line 239, ../sass/utl/_rest.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 247, ../sass/utl/_rest.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 256, ../sass/utl/_rest.scss */
+q {
+  quotes: none;
+}
+
+/* line 263, ../sass/utl/_rest.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 270, ../sass/utl/_rest.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 278, ../sass/utl/_rest.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 285, ../sass/utl/_rest.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 289, ../sass/utl/_rest.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 302, ../sass/utl/_rest.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 308, ../sass/utl/_rest.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 317, ../sass/utl/_rest.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/* line 326, ../sass/utl/_rest.scss */
+nav ul,
+nav ol {
+  list-style-image: none;
+}
+
+/* line 341, ../sass/utl/_rest.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 350, ../sass/utl/_rest.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 360, ../sass/utl/_rest.scss */
+figure {
+  margin: 0;
+}
+
+/* line 370, ../sass/utl/_rest.scss */
+form {
+  margin: 0;
+}
+
+/* line 377, ../sass/utl/_rest.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 388, ../sass/utl/_rest.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+/* line 405, ../sass/utl/_rest.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 418, ../sass/utl/_rest.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 428, ../sass/utl/_rest.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 443, ../sass/utl/_rest.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+/* line 454, ../sass/utl/_rest.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 464, ../sass/utl/_rest.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+/* line 476, ../sass/utl/_rest.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 487, ../sass/utl/_rest.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 495, ../sass/utl/_rest.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 504, ../sass/utl/_rest.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 515, ../sass/utl/_rest.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 8, ../sass/main.scss */
+#myDiv {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  border: solid 20px #990000;
+  -webkit-box-shadow: 0 0 5px black;
+  -moz-box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 16, ../sass/main.scss */
+#myDiv p {
+  color: #ff6666;
+}
+@media screen and (min-width: 900px) {
+  /* line 8, ../sass/main.scss */
+  #myDiv {
+    background-color: grey;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
+  /* line 8, ../sass/main.scss */
+  #myDiv {
+    margin-left: 5px;
+  }
+}
+
+/* line 29, ../sass/main.scss */
+nav {
+  width: 960px;
+}
+/* line 32, ../sass/main.scss */
+nav li {
+  width: 192px;
+}
+@media screen and (min-width: 900px) {
+  /* line 29, ../sass/main.scss */
+  nav {
+    width: 30%;
+  }
+}
