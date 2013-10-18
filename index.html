@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if IE7]><html class='no-js ie ie7 lte7 lte8 lte9"><![endif]-->
+<!--[if IE8]><html class='no-js ie ie8 lte8 lte9"><![endif]-->
+<!--[if IE9]><html class='no-js ie lte9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js"><!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Canvas Mid Term Project</title>
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- typography canvas -->
+		<meta name="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/banner2.js"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript" src="js/modernizr.custom.41769.js"></script>
+
+		<!-- tabs -->
+  		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		
+		<script>
+
+		  $(function() {
+
+		    $( "#tabs" ).tabs();
+
+		  });
+
+	 	 </script> 
+
+	 	
+		
+		
+		
+	</head>
+
+	<body>
+
+		<header>
+			<div class="container">
+	           
+					<div class="clr"></div>
+	        
+	            <div id="wrapper" class="wrapper">
+	                <canvas id="canvas-banner" class="inactive">
+	                    <img src="images/fallback2.png" alt="" />
+	                </canvas>
+	            </div>
+	        </div>
+			<script type="text/javascript">
+				
+				if(Modernizr.canvas) {
+					
+					var wrapper = document.getElementById('wrapper'),
+						loading	= document.createElement('div');
+					
+					loading.className = 'loading';
+					loading.setAttribute('id','loading');
+					loading.innerHTML = 'Loading...';
+
+					wrapper.appendChild(loading);
+					
+					google.load('webfont','1');
+					google.setOnLoadCallback(function() {
+						WebFont.load({
+							google: {
+								families: ['Cookie']
+							},
+							/* Called when each requested web font has finished loading. The fontFamily parameter is the name of the font family, and fontDescription represents the style and weight of the font. */
+							active: function(fontFamily, fontDescription) {
+								setTimeout(function() {
+									
+									loading.style.display = 'none';
+									
+									var banner = new Banner();
+									banner.initialize('canvas-banner');
+									
+									document.getElementById('font').style.display = 'block';
+									
+								}, 1000);
+							},
+							inactive: function() {
+								
+								// google font not loaded, we will use the default font : Arial (set in banner.js file)
+								loading.style.display = 'none';
+								
+								var banner = new Banner();
+								banner.initialize('canvas-banner');
+								
+							}
+						});
+					});
+					
+				}
+				
+			</script>
+		</header>
+
+		<nav>
+
+			<div id="tabs">
+
+			  <ul>
+
+			    <li><a href="#tabs-1">Canvas</a></li>
+
+			    <li><a href="#tabs-2">Text</a></li>
+
+			    <li><a href="#tabs-3">Animation</a></li>
+
+			    <li><a href="#tabs-4">Audio</a></li>
+
+			  </ul>
+
+			  <div id="tabs-1">
+
+			    <p>One of the most exciting features of HTML5 is the <a href="http://www.w3schools.com/html/html5_canvas.asp"><span style="color:#ff0099">Canvas element</span></a> that can be used to draw 2D shapes, vector graphics and bitmap images to create amazing effects all without using a plug-in. So what does a Canvas look like? Nothing, really. A canvas element has no content, border or drawing abilities of its own (it is only a container for graphics) - it is controlled using JavaScript to actually draw the graphics.</p><br><p>Canvas consists of a drawable region defined in HTML code with height and width attributes. JavaScript code may access the area through a full set of drawing functions similar to those of other common 2D APIs, thus allowing for dynamically generated graphics.</p><br><p>Canvas is raster-based. You can have more than one canvas element on the same page. Each canvas will show up in the DOM, and each canvas maintains its own state. If you give each canvas an id attribute, you can access them just like any other element.</p><br><p>HTML5 Canvas works with JavaScript libraries and CSS3 to help you create interactive websites, charts and graphs, web-based games, <a href="http://labs.hyperandroid.com/html5-tiler-3d"><span style="color:#ff0099">image compositions and animations.</span></a> Some of the JavaScript methods are, drawing text, lines, curved paths, and shapes, as well as for rendering images such as JPEGs, GIFs, PNGs, SVGs, and even video. There are also JavaScript methods for <a href="http://www.script-tutorials.com/demos/118/index.html"><span style="color:#ff0099">manipulating canvas pixels directly,</span></a> supporting real-time image processing.</p><br><p>Is there a <a href="http://www.disegnocentell.com.ar/ejemplos/transform/lab.php"><span style="color:#ff0099">3-D canvas</span></a> I'm sure you're wondering. No not as of yet. Individual vendors have experimented with their own <a href="http://peterned.home.xs4all.nl/3d/"><span style="color:#ff0099">three-dimensional canvas</span></a> APIs, but none of them have been standardized. The HTML5 specification notes, “A future version of this specification will probably define a <a href="http://www.giuseppesicari.it/progetti/javascript-3d-model-viewer/"><span style="color:#ff0099">3-D context.”</span></a></p><br><p>Canvas was originally designed by Apple for creating lightweight dashboard widgets on its mobile devices, but is now an openly developed W3C spec which grants it enormous flexibility and application. The use of canvas still needs to take off, right now it is still in a ‘trial’ stage due to browsers limitation and lack of wide resource of code and tutorials. Canvas is in its childhood but growing up fast</p><br><p>The element is supported by the current versions of Mozilla Firefox, Google Chrome, Internet Explorer, Safari, Konqueror and Opera. Older versions of Internet Explorer, version 8 and earlier do not support canvas, however Google and Mozilla Firefox plugins are available</p><br><p>Check out some of the few canvas demos and experiments we have for you below to get some inspiration and learn how to code your own.</p><br>
+
+			  </div>
+  
+			  <div id="tabs-2">
+
+			    <p>In addition to drawing lines on a canvas, you can also draw text on a canvas. Canvas can be used to create stunning <a href="http://js-fireworks.appspot.com/"><span style="color:#ff0099">typographic effects</span></a> that add a unique flair to any design. Unlike text on the surrounding web page, there is no box model. That means none of the familiar CSS layout techniques are available: no floats, no margins, no padding, no word wrapping. (Maybe you think that’s a good thing!) Canvas text is a library written in JavasScript that lets you write styled text easier and with a similar HTML and CSS syntax.  You can set a few font attributes, then you pick a point on the canvas and draw your text there.</p><br><p>Text drawn inside the canvas inherits the font size and style of the canvas element itself, but you can override this by setting the font property on the drawing context. You also can use relative font sizes to draw text on a canvas. Like every other HTML element on your page, the canvas element itself has a computed font size based on your page’s CSS rules. If you set the context font property to a relative font size like 1.5em or 150%, your browser multiplies this by the computed font size of the canvas element itself. Once the font property has been set, we can draw the text with the fillText method, which requires a string and an x and y position.</p><br><p>To set text color with HTML5 Canvas, we can set the fillStyle property of the canvas context to a color string, hex value, or RGB value. To align canvas text, you can use the textAlign property of the canvas context. The alignment is relative to an imaginary vertical line at the x position of the text defined by fillText or strokeText.</p><br><p>Choose a font and color and with one canvas tag and a few snippets of JavaScript, you’ll have your own <a href="http://kevs3d.co.uk/dev/eglogo/"><span style="color:#ff0099">interactive logo.</span></a> This canvas effect has a wide variety of applications. Not only can you <a href="http://www.feedtank.com/labs/html_canvas/"><span style="color:#ff0099">animate</span></a> your logo, try adding flair to a coming soon or 404 Error page, or add your own version of the effect to your website designs as I have done for my header above.</p>
+
+			  </div>
+
+			  <div id="tabs-3">
+
+			    <p> There has been a debate waging some time already about the use of Flash or HTML5 Canvas, which became pretty intense when it became obvious that Apple would not support Flash on its mobile devices. With big websites slowly implementing canvas, the constant updates from browsers (dear IE excluded) and the gaining popularity of HTML5 the debate is still ongoing.</p><br><p>The Canvas element gives you the capability to build and create <a href="http://3.paulhamill.com/node/39"><span style="color:#ff0099">Flash-like</span></a> applications without having to use Flash. It is in the early stages of development, but some of the things you can already accomplish are very impressive.</p><br><p>The most challenging aspect of <a href="http://www.lynda.com/HTML-5-tutorials/HTML5-Graphics-and-Animation-with-Canvas/80782-2.html"><span style="color:#ff0099">creating an HTML5 Canvas animation</span></a> is not understanding the canvas element itself, but knowing how to "paint" JavaScript animations on top of it. To create an animation using HTML5 Canvas, you can use the request AnimFrame shim which enables the browser to determine the optimal FPS for our animation. For each animation frame, you can update the elements on the canvas, clear the canvas, redraw the canvas, and then request another animation frame. An animation is really a series of images drawn rapidly in the same place. Usually, you'll need to clear the background at the beginning of each frame to clear out the last frame's image. Animations and games work by calling a function repeatedly at a prescribed rate. In JavaScript, you typically use the setInterval function to specify a repeated function. The frame rate indicates how often the specified function will be called. <a href="http://www.kevs3d.co.uk/dev/asteroids/"><span style="color:#ff0099">Games and animations</span></a> typically run at frame rates between 10 and 30 frames per second. A faster frame rate is smoother, but may not be maintainable with some hardware. </p><br><p>Other than games, error pages are the most overlooked aspect of web design, but are just as important as any other page. They help retain traffic by redirecting it to the right place and show visitors that you’re not only innovative, but thoughtful. You can create such a page using HTML5 and CSS3 to create a unique animated <a href="http://demo.tutorialzine.com/2010/08/animated-404-not-found-page-css-jquery/404.html"><span style="color:#ff0099">404 Error page</span></a> with very few extras needed.</p>
+
+			  </div>
+
+			  <div id="tabs-4">
+
+			    <p>Canvas provides the visual tools for creating animations, <a href="http://www.addyosmani.com/resources/canvasphoto/"><span style="color:#ff0099">slide shows,</span></a> and games, but to complete a rich media experience you typically want to add sound as well. To add sound to a canvas based <a href="http://www.spacegoo.com/maze/"><span style="color:#ff0099">animation or game,</span></a> use the HTML5 Audio element, controlled by the same JavaScript that controls your canvas animation. Adding HTML5 Audio to your canvas presentation on the desktop is simple just include an audio tag and use the JavaScript play method.</p><br><p>On iOS, it’s slightly more complicated. Because the user may be viewing your website over a cellular connection, paying for data by the megabyte, and because audio uses a lot of data, Safari on iOS downloads audio only as a direct result of user action. You can’t programmatically load and play audio unless the user authorizes it by clicking a button. Currently, iOS supports playback of a single audio stream at a time when playing audio inline on a website. Currently, the loop attribute for HTML5 audio is not supported on iOS.</p><br><p>Some few examples of audio effects that you might use to enhance your canvas elements might be adding <a href="http://imgkk.com/demo/"><span style="color:#ff0099">soundtracks</span></a> to your canvas element. A soundtrack is a single audio source such as music or a voice-over that <a href="http://www.effectgames.com/demos/canvascycle/"><span style="color:#ff0099">plays during your presentation.</span></a> The audio source can loop or be timed to match the canvas presentation.</p><br><p>Sometimes sound isn’t tightly coupled to the visual display for example, looping audio may provide ambiance to your site, but not be a requirement to enjoy the visuals. The loop attribute is not currently supported for inline HTML5 Audio on iOS, so to make your audio loop you need to install an event listener on the audio element. The event listener listens for the "ended" event and invokes the play method to immediately restart the audio at the beginning.</p><br><p>For a slideshow or a Keynote presentation, for example, you may want to add a voice-over that narrates each slide individually. It’s easiest to create and maintain such a presentation if you record a separate audio file for each slide that way you can add, change, or rearrange your presentation on a slide-by-slide basis.</p><br><p>Last but not least is adding <a href="http://craftymind.com/factory/html5video/CanvasVideo.html"><span style="color:#ff0099">sound effects</span></a> for games. In doing this you typically want to trigger different sounds in response to events in your games.</p>
+
+			  </div>
+
+			</div>
+
+		</nav>
+
+
+		<section>
+
+			<a href="http://webcanvas.com/#-5,0,1" class="a-btn">
+			    <span></span>
+			    <span>FUN</span>
+			    <span>CLICK!</span>
+			</a>
+			<a href="http://andrew-hoyer.com/andrewhoyer/experiments/cloth/" class="a-btn">
+			    <span></span>
+			    <span>WITH</span>
+			    <span>DRAG!</span>
+			</a>
+			<a href="http://sketchpad.io/sketch/?newfile" class="a-btn">
+			    <span></span>
+			    <span>HTML5</span>
+			    <span>DRAW!</span>
+			</a>
+			<a href="http://9elements.com/io/projects/html5/canvas/" class="a-btn">
+			    <span></span>
+			    <span>CANVAS</span>
+			    <span>FUN!</span>
+			</a>
+
+
+		</section>
+
+
+		<footer>
+			<ul>
+				<li style="color:#8c8c8c; font-size:22px;">HTML5 CANVAS - D.Niespolo 2013&copy;&nbsp;&nbsp; </li>
+				<li>|<a href="home.html">&nbsp;&nbsp;Home&nbsp;&nbsp; </a>|</li>
+			
+			</ul>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
