@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Ajax - Post!</title>
+		<link href="main.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<h1>Contact Me!</h1>
+
+		<form action="mail.php" method="POST" enctype="multipart/form-data">
+			<fieldset>
+
+				<p>
+					<input type="text" name="email" id="email" required>
+					<label for="email">E-Mail</label>
+
+				</p>
+
+				<p>
+					<input type="text" name="subject" id="subject" required>
+					<label for="subject">Subject</label>
+				</p>
+
+				<p>
+					<label for="message">Message</label>
+					<textarea name="message" id="message" required></textarea>
+				</p>
+
+				<p>
+					<label for="thing">Thing</label>
+					<input type="file" name="thing" id="thing" required>
+				</p>
+
+				<p>
+					<input type="submit" value="Contact Away!">
+				</p>
+
+			</fieldset>
+
+		</form>
+
+		<div id="winmask">
+			<div id="server-message"></div>
+		</div>
+
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="main.js"></script>
+
+
+	</body>
+</html>

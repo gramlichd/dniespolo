@@ -1,0 +1,30 @@
+
+textarea{
+	display: block;
+}
+
+.error {
+
+	color:red;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#winmask {
+
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.75);
+	display: none;
+}
+
+#server-message{
+
+	width: 350px;
+	margin: 200px auto;
+	padding: 20px;
+	background-color: #fff;
+}
