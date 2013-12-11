@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if IE7]><html class='no-js ie ie7 lte7 lte8 lte9"><![endif]-->
+<!--[if IE8]><html class='no-js ie ie8 lte8 lte9"><![endif]-->
+<!--[if IE9]><html class='no-js ie lte9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js"><!--<![endif]-->
+	<head>
+		<title>Hi</title>	
+		<script src="modernizr.js"></script>
+		<style>
+			.ie7 .myDiv{
+				display:inline*;
+			}
+			.myDiv {
+					text-shadow:0 0 2px #fff;
+					background: rgba(0,0,0,0.5);
+					padding: 5px;
+			}
+			.no-rgba .myDiv{
+				background:url('black50.png')repeat left top;
+			}
+			.no-textshadow .myDiv{
+				text-indent: -99999px;
+				background-image: url('text-shadow.png');
+
+			}
+			.boxshadow .myDiv{
+				box-shadow: 0 0 5px black;
+				padding:3px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="myDiv">HI!</div>
+		<script src="main.js"></script>
+	</body>
+
+</html>

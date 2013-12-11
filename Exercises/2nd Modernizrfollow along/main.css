@@ -1,0 +1,16 @@
+.my-div {
+	height:300px;
+	width:300px;
+	background-color: red;
+	-moz-transiton:margin-left 0.5s;
+}
+/*
+By prefixing our CSS selector with". csstransitons"
+we can ensure that the hover event that alters the margin-left will only
+occur in browsers that support CSS Transitons
+*/
+
+.csstransitons .my-div:hover {
+	margin-left:200px;
+}
+

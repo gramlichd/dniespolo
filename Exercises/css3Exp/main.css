@@ -1,0 +1,89 @@
+#my-div {
+	background-color:red;
+	width:100px;
+	height:100px;
+
+/*	-webkit-box-shadow: 0px 0px 5px 10px black;
+	box-shadow: 0px 0px 5px 10px black;
+
+
+box-shadow: inset? | offset-x | offset-y | blur-radius? | spread-radius? | color?;
+*/
+
+
+/*	-webkit-border-radius: 50% 5px 10px 0px;
+	border-radius: 50% 5px 10px 0px;
+
+border-radius: top left | top right | bottom right| bottom left;
+*/
+
+
+/*	background-image: -moz-linear-gradient(to bottom, #444, #999);
+	background-image: linear-gradient(to bottom, #444, #999);
+*/
+
+	text-shadow: 5px 5px 2px white;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#FFFFFF,direction=45);
+	font-size:24px;
+	font-weight:bold;
+}
+
+#div2 {
+
+	background-color: blue;
+	margin-top: -75px;
+	margin-left:25px;
+
+	height: 100px;
+	width: 100px;
+
+	/*opacity: 0.5;
+	filter:alpha(opacity=50%);
+	*/
+
+	background-color:rgba(0,0,0,0.5);
+}
+#div3 {
+
+	width:300px;
+	height:175px;
+	background:url('cat.jpg')no-repeat left top; 
+	background-size:contain;
+/*	or background-size:cover;
+	background-size: 100px 50px;*/
+}
+
+
+#circle{
+	background-color: blue;
+	box-shadow:inset 0 0 0px black;
+	width: 100px;
+	height:100px;
+	border-radius: 0;
+	-moz-transition:all 1s;
+/*	-moz-animation:myAnimation 3s both infinite;*/
+}
+
+#circle:hover{
+	box-shadow: inset 0 0 10px black;
+	background-color: red;
+	border-radius: 50%;
+
+}
+
+@-moz-keyframes myAnimation{
+	0% {
+		background-color: blue;
+		border-radius:50%;
+	}
+	50% {
+		background-color: red;
+		border-radius:0;
+	}
+	100% {
+		background-color: blue;
+		border-radius:50;
+	}
+	
+}
+
