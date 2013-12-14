@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Contact Form</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Trophy<span class="logo_colour">Tile</span></a></h1>
+          <h2>For A Championship Job</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Residential</a></li>
+          <li><a href="portfolio.html">Commercial</a></li>
+          <li class="selected"><a href="contactform.htm">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div id="gallery">
+          <ul class="images">
+            <li class="show"><img width="450" height="450" src="images/1.jpg" alt="photo_one" /></li>
+            <li><img width="450" height="450" src="images/2.jpg" alt="photo_two" /></li>
+            <li><img width="450" height="450" src="images/3.jpg" alt="photo_three" /></li>
+            <li><img width="450" height="450" src="images/4.jpg" alt="photo_four" /></li>
+            <li><img width="450" height="450" src="images/5.jpg" alt="photo_five" /></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        <h1>Contact</h1>
+        <p>Feel free to contact us anytime. We will be happy to answer any questions you may have. If you’re looking for a custom job residential or commercial, we will be happy to schedule an appointment at your convenience free of charge.</p><p>If you are looking for references we have a long list of those. If you are not sure what you are looking for as far as decorating ideas, we can sure help with that as well. We have hundreds of pictures of custom jobs we have done to many to put on our site. With all of our years of experience we are always up on the latest treads of today.</p><p>Thank you for visiting our site we hope to do business with you in the future.</p>
+<form action="FormToEmail.php" method="post" name="contactform">
+<label>Name:</label><br />
+<input name="name" type="text" id="name"/><br />
+<label>Email:</label><br />
+<input name="email" type="text" id="email" /><br />
+<label>Comments</label><br />
+<textarea name="comments" cols="50" rows="10" id="comments"></textarea><br />
+<input name="Submit" type="button" value="Submit" />
+</form>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; Trophy Tile All Rights Reserved. | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a><br />Educational only, no commercial value.</p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+<center><script type="text/javascript" src="footer.js"></script></center>
+</body>
+</html>
+
